@@ -1,0 +1,22 @@
+@import "../../vars";
+@import "../../mixins";
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.category {
+  li {
+    margin-bottom: 11px;
+
+    &.active {
+      color: $blue-color;
+    }
+  }
+
+  a:visited {
+    color: inherit;
+  }
+}

@@ -1,0 +1,79 @@
+@import "../../vars";
+@import "../../mixins";
+
+.popup {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  z-index: 3;
+  overflow: hidden;
+
+  background-color: $light-color;
+  padding: 40px;
+
+  @include desktop {
+    padding: 36px 30px;
+  }
+
+  &__list {
+
+    display: flex;
+    column-gap: 35px;
+
+    @include desktop {
+      column-gap: 25px;
+    }
+
+    li:not(:last-child) {
+      border-right: 1px solid #BAA4A4;
+      padding-right: 35px;
+
+      @include desktop {
+        padding-right: 25px;
+      }
+    }
+
+    h4 {
+      color: #1A1D22;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      margin: 0 0 15px;
+
+      a {
+        @include desktop {
+          font-size: 14px;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      color: inherit;
+      font-size: 16px;
+      line-height: 20px;
+
+      &:hover {
+        color: $hover-color;
+      }
+
+      @include desktop {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.popup {
+  &-catalog {
+    padding: 40px;
+
+    .popup__list {
+      column-gap: 35px;
+
+      li:not(:last-child) {
+        padding-right: 35px;
+      }
+    }
+  }
+}

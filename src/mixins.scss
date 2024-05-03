@@ -1,0 +1,74 @@
+/* Fonts */
+
+@mixin font-face($font-family, $url, $weight, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url('./#{$url}.woff2') format("woff2");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: $style;
+  }
+}
+
+/*Breakpoints*/
+
+@mixin for-desktop {
+  @media (min-width: (1025px)) {
+    @content;
+  }
+}
+
+@mixin big-desktop {
+  @media (max-width: (1440px)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: (1280px)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: (1024px)) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
+  @media (max-width: (768px)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: (576px)) {
+    @content;
+  }
+}
+
+@mixin blocksFilter($gtc1, $gtc2, $overflowY, $h1, $h2) {
+
+  grid-template-columns: $gtc1;
+  padding-right: 3px;
+  font-size: 14px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: $gtc2;
+  }
+
+  &.show {
+    height: $h1;
+    max-height: 100vh;
+    transition: height .2s linear;
+
+    overflow-y: $overflowY;
+
+    @media (max-width: 1200px) {
+      font-size: 14px;
+      height: $h2;
+    }
+  }
+
+}

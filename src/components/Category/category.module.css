@@ -1,0 +1,26 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
+
+/* Fonts */
+/*Breakpoints*/
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.category li {
+  margin-bottom: 11px;
+}
+.category li.active {
+  color: #0069C6;
+}
+.category a:visited {
+  color: inherit;
+}
+
+/*# sourceMappingURL=category.module.css.map */

@@ -1,0 +1,15 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
+
+/* Fonts */
+/*Breakpoints*/
+.greyLine {
+  border: 1px solid #BEC5D8;
+  margin: 15px 0;
+}
+
+/*# sourceMappingURL=greyLine.module.css.map */

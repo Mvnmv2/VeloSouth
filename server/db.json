@@ -1,0 +1,123 @@
+{
+  "catalogItems": [
+    {
+      "id": 0,
+      "image": "src/assets/img/catalog/11.png",
+      "priceActual": 27085,
+      "priceNotActual": 57000,
+      "title": "Горный велосипед KMS диаметр 26”"
+    },
+    {
+      "id": 1,
+      "image": "src/assets/img/catalog/22.png",
+      "priceActual": 13054,
+      "priceNotActual": 32614,
+      "title": "Городской велосипед PULSE диаметр 27,5”"
+    },
+    {
+      "id": 2,
+      "image": "src/assets/img/catalog/33.png",
+      "priceActual": 2200,
+      "priceNotActual": 6586,
+      "title": "Самокат трюковой KMS TRICK, дека 48 см"
+    },
+    {
+      "id": 3,
+      "image": "src/assets/img/catalog/44.png",
+      "priceActual": 1620,
+      "priceNotActual": 4795,
+      "title": "Самокат двухколесный складной, дека 35 см"
+    },
+    {
+      "id": 4,
+      "image": "src/assets/img/catalog/11.png",
+      "priceActual": 27085,
+      "priceNotActual": 57000,
+      "title": "Горный велосипед KMS диаметр 26”"
+    },
+    {
+      "id": 5,
+      "image": "src/assets/img/catalog/22.png",
+      "priceActual": 13054,
+      "priceNotActual": 32614,
+      "title": "Городской велосипед PULSE диаметр 27,5”"
+    },
+    {
+      "id": 6,
+      "image": "src/assets/img/catalog/33.png",
+      "priceActual": 2200,
+      "priceNotActual": 6586,
+      "title": "Самокат трюковой KMS TRICK, дека 48 см"
+    },
+    {
+      "id": 7,
+      "image": "src/assets/img/catalog/44.png",
+      "priceActual": 1620,
+      "priceNotActual": 4795,
+      "title": "Самокат двухколесный складной, дека 35 см"
+    },
+    {
+      "id": 8,
+      "image": "src/assets/img/catalog/11.png",
+      "priceActual": 27085,
+      "priceNotActual": 57000,
+      "title": "Горный велосипед KMS диаметр 26”"
+    },
+    {
+      "id": 9,
+      "image": "src/assets/img/catalog/22.png",
+      "priceActual": 13054,
+      "priceNotActual": 32614,
+      "title": "Городской велосипед PULSE диаметр 27,5”"
+    },
+    {
+      "id": 10,
+      "image": "src/assets/img/catalog/33.png",
+      "priceActual": 2200,
+      "priceNotActual": 6586,
+      "title": "Самокат трюковой KMS TRICK, дека 48 см"
+    },
+    {
+      "id": 11,
+      "image": "src/assets/img/catalog/44.png",
+      "priceActual": 1620,
+      "priceNotActual": 4795,
+      "title": "Самокат двухколесный складной, дека 35 см"
+    }
+  ],
+  "filters": [
+
+    {
+      "id": 0,
+      "title": "Колеса",
+      "property": [
+        "10\"",
+        "12\"",
+        "14\"",
+        "16\"",
+        "18\"",
+        "20\"",
+        "24\"",
+        "26\"",
+        "27.5\"",
+        "28\"",
+        "29\""
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Навеска",
+      "property": ["Начальное", "Любительское", "Полупрофессиональное", "Профессиональное"]
+    },
+    {
+      "id": 2,
+      "title": "Материал",
+      "property": ["Магниевый сплав", "Пластик", "Алюминий", "Сталь", "Карбон"]
+    },
+    {
+      "id": 3,
+      "title": "Пол",
+      "property": ["Мужской", "Женский", "Унисекс"]
+    }
+  ]
+}

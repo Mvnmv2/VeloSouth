@@ -1,0 +1,88 @@
+@import "../../vars";
+@import "../../mixins";
+
+.list {
+
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  color: $black-color;
+  //line-height: 15px;
+
+  transition: margin-bottom .2s linear;
+
+  &.show {
+    margin-bottom: 15px;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+
+.item {
+  display: grid;
+  row-gap: 5px;
+
+  overflow-y: hidden;
+
+  &.block0 {
+
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      justify-content: initial;
+    }
+
+    @include blocksFilter(repeat(3, auto), repeat(2, auto), hidden, 84px, 125px)
+  }
+
+  &.block1 {
+
+    span {
+      word-break: break-all;
+    }
+
+    @include blocksFilter(auto, auto, hidden, 105px, 115px)
+  }
+
+  &.block2 {
+    @include blocksFilter(auto, auto, hidden, 110px, 105px)
+  }
+
+  &.block3 {
+    @include blocksFilter(auto, auto, hidden, 60px, 60px)
+  }
+
+  span {
+    margin-left: 8px;
+    word-break: break-word;
+
+    @media (max-width: 1200px) {
+      margin-left: 5px;
+    }
+  }
+
+  height: 0;
+  transition: height .2s linear;
+}
+
+.line {
+  margin: 15px 0 15px;
+  border: 1px solid #BEC5D8;
+}
+
+.arrowRotate {
+  transition: transform .2s linear;
+
+  &.show {
+    transform: rotate(180deg);
+  }
+}
+
+

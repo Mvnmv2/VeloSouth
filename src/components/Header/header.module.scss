@@ -1,0 +1,128 @@
+@import "../../vars";
+@import "../../mixins";
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+
+  &__wrapper {
+
+    padding: 30px 80px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include desktop {
+      padding: 26px 65px 0;
+    }
+
+    @include tablet {
+      padding: 20px 40px 0;
+    }
+
+    @include small-tablet {
+      padding: 20px 40px 0;
+    }
+
+    @include mobile {
+      padding: 18px 20px 0;
+    }
+
+    @media (max-width: 320px) {
+      padding: 17px 17px 0;
+    }
+  }
+
+  &__logoImg {
+    display: block;
+
+    @include desktop {
+      width: 77px;
+      height: auto;
+    }
+
+    @include tablet {
+      width: 52.5px;
+    }
+  }
+
+  &__navList {
+    display: flex;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__navItem {
+    color: #1A1D22;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    &:first-child,
+    &:nth-child(3) {
+
+      position: relative;
+
+      .arrow {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 14px;
+        transform: rotate(180deg);
+
+        transition: transform .2s linear;
+
+        &.active {
+          transform: rotate(0);
+        }
+      }
+    }
+
+    &__link {
+      color: inherit;
+
+      &:hover {
+        color: #0069C6;
+      }
+    }
+
+    @include desktop {
+      font-size: 16px;
+    }
+
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  &__listIcons {
+    display: flex;
+    align-items: center;
+
+    @include small-tablet {
+      display: none;
+    }
+
+    a {
+      display: inline-block;
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  &__icon:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+

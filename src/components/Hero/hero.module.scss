@@ -1,0 +1,244 @@
+@import "../../vars";
+@import "../../mixins";
+
+.hero {
+  &__container {
+    //background: url("../../img/52.png") no-repeat center,
+    background: linear-gradient(141deg, #EEF4FD 22.38%, #F5F8FD 73.32%);
+
+    @include desktop {
+      background: radial-gradient(133.17% 133.17% at 50% 91.15%, #FBFCFF 0%, #EDF0FF 20%, #E1E6FF 40%, #E2E7FF 60%, #A5B4FF 86.56%);
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-size: 100% auto;
+    //background-size: contain;
+
+    min-height: 700px;
+
+    padding-top: 174px;
+    padding-left: 180px;
+
+    @media (max-width: 1800px) {
+      padding: 150px 0 0 85px;
+      min-height: 650px;
+    }
+
+    @media (max-width: 1500px) {
+      padding: 137px 0 0 65px;
+      min-height: 600px;
+    }
+
+    @include desktop {
+      padding: 137px 0 0 65px;
+      min-height: 550px;
+    }
+
+    @include tablet {
+      min-height: 418px;
+      padding: 88px 0 0 40px;
+    }
+
+    @include small-tablet {
+      padding: 73px 0 0 40px;
+    }
+
+    @include mobile {
+      padding: 73px 0 0 20px;
+      min-height: 500px;
+    }
+
+    @media (max-width: 480px) {
+      min-height: 470px;
+    }
+
+    @media (max-width: 320px) {
+      padding: 77px 0 0 15px;
+      min-height: 430px;
+    }
+
+    position: relative;
+  }
+
+  &__img {
+    max-width: 1920px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @media (max-width: 1800px) {
+      margin-left: 100px;
+    }
+
+    @media (max-width: 1360px) {
+      margin-left: 120px;
+    }
+
+    @include tablet {
+      margin-left: 50px;
+    }
+
+    @include small-tablet {
+      display: none;
+      margin-left: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: #00275B;
+    font-size: 78px;
+    font-weight: 600;
+    line-height: 85%;
+
+    max-width: 872px;
+
+    .secondLine {
+      display: inline-block;
+      margin-left: 130px;
+      margin-top: 9px;
+      margin-bottom: 40px;
+
+      @include desktop {
+        margin-bottom: 25px;
+        margin-left: 100px;
+      }
+
+      @include small-tablet {
+        margin-bottom: 20px;
+        margin-left: 70px;
+      }
+
+      @include mobile {
+        margin-bottom: 15px;
+        margin-left: 55px;
+      }
+
+      @media (max-width: 479px) {
+        margin-bottom: 14px;
+        margin-left: 53px;
+      }
+    }
+
+    @media (max-width: 1500px) {
+      font-size: 70px;
+    }
+
+    @include desktop {
+      font-size: 60px;
+    }
+
+    @include tablet {
+      font-size: 50px;
+    }
+
+    @include small-tablet {
+      font-size: 40px;
+    }
+
+    @media (max-width: 479px) {
+      font-size: 26px;
+    }
+  }
+
+  &__subtitle {
+    color: $black-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-left: 130px;
+    margin-bottom: 55px;
+
+    @include desktop {
+      font-size: 17px;
+      margin-bottom: 40px;
+      margin-left: 100px;
+    }
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include small-tablet {
+      font-size: 14px;
+      margin-bottom: 20px;
+      margin-left: 70px;
+
+    }
+
+    @include mobile {
+      margin-bottom: 12px;
+      margin-left: 55px;
+    }
+
+    @media (max-width: 479px) {
+      font-size: 12px;
+      margin-left: 53px;
+
+    }
+  }
+
+
+  .hero__img768 {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    @include small-tablet {
+      display: block;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .hero__img480 {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    @include mobile {
+      display: block;
+
+    }
+
+    @media (max-width: 389px) {
+      display: none;
+    }
+  }
+
+  .hero__img320 {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100%;
+    max-width: 390px;
+
+    @media (max-width: 389px) {
+      display: block;
+    }
+  }
+
+  &__link {
+
+    @media (max-width: 389px) {
+      align-self: center;
+      margin-top: auto;
+    }
+  }
+
+}
+
+

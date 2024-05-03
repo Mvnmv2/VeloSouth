@@ -1,0 +1,8 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
+
+/*# sourceMappingURL=vars.css.map */

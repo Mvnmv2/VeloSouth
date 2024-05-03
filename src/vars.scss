@@ -1,0 +1,13 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
+
+$light-color: #fff;
+$black-color: #131B22;
+$blue-color: #0069C6;
+$text-color: #585B78;
+$hover-color: #2386DD;
+$active-color: #F1F6FD;

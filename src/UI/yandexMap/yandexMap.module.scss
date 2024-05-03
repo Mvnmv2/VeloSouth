@@ -1,0 +1,24 @@
+@import '../../mixins.scss';
+@import '../../vars.scss';
+
+
+.map {
+  width: 100%;
+  height: 716px;
+
+  @include desktop {
+    height: 556px;
+  }
+
+  @include small-tablet {
+    height: 360px;
+  }
+
+  @include mobile {
+    height: 234px;
+  }
+
+  @media (max-width: 350px) {
+    height: 200px;
+  }
+}

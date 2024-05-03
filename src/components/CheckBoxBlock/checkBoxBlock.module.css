@@ -1,0 +1,26 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
+
+/* Fonts */
+/*Breakpoints*/
+.title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.brandItem {
+  margin-bottom: 10px;
+}
+.brandItem label {
+  margin-left: 10px;
+}
+.brandItem:last-child {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=checkBoxBlock.module.css.map */

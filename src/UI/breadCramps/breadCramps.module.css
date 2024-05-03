@@ -1,0 +1,23 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
+
+/* Fonts */
+/*Breakpoints*/
+.root {
+  font-size: 16px;
+  color: #BEC5D8;
+  line-height: 85%;
+  margin-bottom: 21px;
+}
+@media (max-width: 576px) {
+  .root {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+}
+
+/*# sourceMappingURL=breadCramps.module.css.map */

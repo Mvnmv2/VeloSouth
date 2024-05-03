@@ -1,0 +1,127 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
+
+/* Fonts */
+/*Breakpoints*/
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+.header__wrapper {
+  padding: 30px 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1280px) {
+  .header__wrapper {
+    padding: 26px 65px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .header__wrapper {
+    padding: 20px 40px 0;
+  }
+}
+@media (max-width: 768px) {
+  .header__wrapper {
+    padding: 20px 40px 0;
+  }
+}
+@media (max-width: 576px) {
+  .header__wrapper {
+    padding: 18px 20px 0;
+  }
+}
+@media (max-width: 320px) {
+  .header__wrapper {
+    padding: 17px 17px 0;
+  }
+}
+.header__logoImg {
+  display: block;
+}
+@media (max-width: 1280px) {
+  .header__logoImg {
+    width: 77px;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .header__logoImg {
+    width: 52.5px;
+  }
+}
+.header__navList {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .header__navList {
+    display: none;
+  }
+}
+.header__navItem {
+  color: #1A1D22;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.header__navItem:not(:last-child) {
+  margin-right: 25px;
+}
+.header__navItem:first-child, .header__navItem:nth-child(3) {
+  position: relative;
+}
+.header__navItem:first-child .arrow, .header__navItem:nth-child(3) .arrow {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 14px;
+  transform: rotate(180deg);
+  transition: transform 0.2s linear;
+}
+.header__navItem:first-child .arrow.active, .header__navItem:nth-child(3) .arrow.active {
+  transform: rotate(0);
+}
+.header__navItem__link {
+  color: inherit;
+}
+.header__navItem__link:hover {
+  color: #0069C6;
+}
+@media (max-width: 1280px) {
+  .header__navItem {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .header__navItem {
+    font-size: 14px;
+  }
+}
+.header__listIcons {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .header__listIcons {
+    display: none;
+  }
+}
+.header__listIcons a {
+  display: inline-block;
+}
+.header__listIcons img {
+  display: block;
+}
+.header__icon:not(:last-child) {
+  margin-right: 18px;
+}
+
+/*# sourceMappingURL=header.module.css.map */

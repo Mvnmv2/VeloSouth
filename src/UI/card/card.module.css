@@ -1,0 +1,235 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
+
+/* Fonts */
+/*Breakpoints*/
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card__link {
+  display: block;
+  border-radius: 15px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.card__link:hover {
+  box-shadow: 7px 4px 14px 1px rgba(0, 0, 0, 0.27);
+}
+.card.lineView {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr auto;
+  column-gap: 2vw;
+}
+.card.lineView .image {
+  grid-row: 2 span;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.card.lineView .image img {
+  align-self: center;
+}
+.card.lineView .description {
+  display: block;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: end;
+  list-style-type: disc;
+  font-size: calc(0.5vw + 10px);
+  color: #131B22;
+  margin-bottom: 20px;
+}
+.card.lineView .description li::marker {
+  color: #0069C6;
+}
+@media (max-width: 1280px) {
+  .card.lineView .description {
+    display: none;
+  }
+}
+.card.lineView .price {
+  grid-column: 3/4;
+  display: block;
+  padding: 20px 20px 0 0;
+  justify-self: end;
+}
+.card.lineView .price__actual {
+  margin: 0 0 10px;
+}
+@media (min-width: 1024px) {
+  .card.lineView .price__actual {
+    font-size: 32px;
+  }
+}
+.card.lineView .price__not__actual {
+  text-align: right;
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .card.lineView .price__not__actual {
+    font-size: 20px;
+  }
+}
+.card.lineView .title {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 0;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+@media (min-width: 1024px) {
+  .card.lineView .title {
+    font-size: 30px;
+  }
+}
+.card.lineView .button {
+  margin: 0 20px 20px 0;
+  grid-column: 3/4;
+  justify-self: end;
+}
+@media (min-width: 1024px) {
+  .card.lineView .button.btnCatalogPage {
+    padding: 20px 60px;
+    font-size: 20px;
+    width: auto;
+  }
+}
+.card .image {
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 21px;
+}
+.card .image img {
+  display: block;
+}
+.card .image.bgcCatalogPage {
+  background-color: #F0F5FD;
+}
+@media (max-width: 480px) {
+  .card .image {
+    margin-bottom: 12px;
+  }
+}
+.card .description {
+  display: none;
+}
+.card .price {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 13px;
+  padding-left: 10px;
+}
+@media (max-width: 1280px) {
+  .card .price {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .card .price {
+    margin-bottom: 0;
+  }
+}
+.card .price__actual {
+  font-size: 26px;
+  line-height: 30px;
+  color: #0069C6;
+  font-weight: 600;
+  margin-right: 15px;
+}
+@media (max-width: 1280px) {
+  .card .price__actual {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .card .price__actual {
+    font-size: 14px;
+  }
+}
+.card .price__not__actual {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ABB1C5;
+  font-weight: 600;
+  text-decoration: line-through;
+  align-self: flex-end;
+}
+@media (max-width: 1280px) {
+  .card .price__not__actual {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .card .price__not__actual {
+    font-size: 10px;
+  }
+}
+.card .title {
+  font-size: 20px;
+  color: #131B22;
+  line-height: 130%;
+  font-weight: 400;
+  padding-left: 10px;
+  margin-bottom: auto;
+}
+@media (max-width: 1280px) {
+  .card .title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .card .title {
+    font-size: 12px;
+  }
+}
+.card .button {
+  padding-left: 47px;
+  padding-right: 47px;
+  align-self: flex-start;
+  margin: 10px 0 10px 10px;
+}
+.card .button.btnCatalogPage {
+  width: 160px;
+  padding: 9px 0;
+}
+@media (max-width: 1024px) {
+  .card .button.btnCatalogPage {
+    width: 120px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .card .button.btnCatalogPage {
+    width: 80px;
+    font-size: 12px;
+    padding: 8px 0;
+  }
+}
+@media (max-width: 1280px) {
+  .card .button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .card .button {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .card .button {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 5px 15px;
+    line-height: 1.5;
+  }
+}
+
+/*# sourceMappingURL=card.module.css.map */

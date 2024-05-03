@@ -1,0 +1,133 @@
+/* Fonts */
+/*Breakpoints*/
+:root {
+  font-family: "Roboto", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
+
+.map__container {
+  padding: 0 24px;
+}
+@media (max-width: 1280px) {
+  .map__container {
+    padding: 0;
+  }
+}
+.map__wrap {
+  position: relative;
+}
+.map__wrap img {
+  position: absolute;
+  z-index: 2;
+}
+.map__wrap__bgc__top {
+  top: -30px;
+}
+@media (max-width: 350px) {
+  .map__wrap__bgc__top {
+    top: -20px;
+  }
+}
+.map__wrap__bgc__bottom {
+  max-width: 1594px;
+  width: 100%;
+  bottom: -40px;
+}
+@media (max-width: 1280px) {
+  .map__wrap__bgc__bottom {
+    width: 140%;
+    bottom: -70px;
+  }
+}
+@media (max-width: 1024px) {
+  .map__wrap__bgc__bottom {
+    bottom: -40px;
+  }
+}
+@media (max-width: 768px) {
+  .map__wrap__bgc__bottom {
+    bottom: -26px;
+  }
+}
+@media (max-width: 550px) {
+  .map__wrap__bgc__bottom {
+    bottom: -10px;
+  }
+}
+@media (max-width: 350px) {
+  .map__wrap__bgc__bottom {
+    bottom: -3px;
+  }
+}
+.map__wrap__icon {
+  display: block;
+  max-width: 69px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(100% - 8vw);
+}
+@media (min-width: 1025px) {
+  .map__wrap__icon {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .map__wrap__icon {
+    top: calc(100% - 10vw);
+  }
+}
+@media (max-width: 400px) {
+  .map__wrap__icon {
+    max-width: 60px;
+  }
+}
+@media (max-width: 350px) {
+  .map__wrap__icon {
+    max-width: 55px;
+  }
+}
+.map__title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 145%;
+  margin-bottom: 26px;
+  padding-left: 156px;
+}
+@media (max-width: 1280px) {
+  .map__title {
+    font-size: 32px;
+    padding-left: 67px;
+  }
+}
+@media (max-width: 1024px) {
+  .map__title {
+    font-size: 24px;
+    padding-left: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .map__title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .map__title {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .map__title {
+    padding-left: 17px;
+  }
+}
+.map__title__city {
+  color: #0069C6;
+  margin-left: 5px;
+}
+
+/*# sourceMappingURL=map.module.css.map */

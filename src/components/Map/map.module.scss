@@ -1,0 +1,125 @@
+@import '../../mixins.scss';
+@import '../../vars.scss';
+
+.map {
+  &__container {
+    padding: 0 24px;
+
+    @include desktop {
+      padding: 0;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    //overflow: hidden;
+
+
+    img {
+      //display: block;
+      position: absolute;
+      //left: 0;
+      z-index: 2;
+    }
+
+    &__bgc__top {
+      top: -30px;
+
+      @media (max-width: 350px) {
+        top: -20px;
+
+      }
+    }
+
+    &__bgc__bottom {
+      max-width: 1594px;
+      width: 100%;
+      bottom: -40px;
+
+
+      @include desktop {
+        width: 140%;
+        bottom: -70px;
+
+      }
+
+      @include tablet {
+        bottom: -40px;
+      }
+
+      @media (max-width: 768px) {
+        bottom: -26px;
+      }
+
+      @media (max-width: 550px) {
+        bottom: -10px;
+      }
+
+      @media (max-width: 350px) {
+        bottom: -3px;
+      }
+    }
+
+    &__icon {
+      display: block;
+      max-width: 69px;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: calc(100% - 8vw);
+
+      @media (min-width: 1025px) {
+        display: none;
+      }
+
+      @media (max-width: 550px) {
+        top: calc(100% - 10vw);
+      }
+
+      @media (max-width: 400px) {
+        max-width: 60px;
+      }
+
+      @media (max-width: 350px) {
+        max-width: 55px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 145%;
+    margin-bottom: 26px;
+    padding-left: 156px;
+
+    @include desktop {
+      font-size: 32px;
+      padding-left: 67px;
+    }
+
+    @include tablet {
+      font-size: 24px;
+      padding-left: 40px;
+    }
+
+    @include small-tablet {
+      font-size: 22px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+      padding-left: 20px;
+    }
+
+    @media (max-width: 320px) {
+      padding-left: 17px;
+    }
+
+    &__city {
+      color: $blue-color;
+      margin-left: 5px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../vars";
+@import "../../mixins";
+
+.root {
+  font-size: 16px;
+  color: #BEC5D8;
+  line-height: 85%;
+
+  margin-bottom: 21px;
+
+  @media (max-width: 576px) {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+}

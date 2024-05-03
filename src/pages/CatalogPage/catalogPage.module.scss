@@ -1,0 +1,245 @@
+@import "../../vars";
+@import "../../mixins";
+
+.catalogPage {
+
+  &__container {
+    padding: 112px 80px 0 77px;
+
+    @include desktop {
+      padding: 80px 60px 100px;
+    }
+
+    @include tablet {
+      padding: 60px 38px 70px 34px;
+    }
+
+    @include small-tablet {
+      padding-bottom: 70px;
+    }
+
+    @media (max-width: 745px) {
+      padding: 70px 20px 50px 20px;
+    }
+
+    @media (max-width: 440px) {
+      padding: 70px 17px 35px 17px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: 70px 20px 0 20px;
+  }
+}
+
+.title {
+  font-size: 32px;
+  color: $black-color;
+  font-weight: 500;
+  margin-bottom: 35px;
+
+  line-height: 85%;
+
+  @media (max-width: 576px) {
+    font-size: 25px;
+    margin-bottom: 20px;
+
+  }
+
+  &__Count {
+    font-size: 24px;
+    color: #BEC5D8;
+    margin-left: 14px;
+
+
+    @media (max-width: 576px) {
+      font-size: 13px;
+      margin-left: 7px;
+    }
+  }
+}
+
+.brandList {
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 2vw;
+
+  margin-bottom: 50px;
+  padding-bottom: 15px;
+  
+  @media (max-width: 840px) {
+    margin-bottom: 34px;
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+
+  overflow-x: auto;
+
+  &__item {
+    padding: 2vw 5px;
+    border: 1px solid #E3E3E3;
+    border-radius: 15px;
+    text-align: center;
+
+    cursor: auto;
+
+    @include mobile {
+      width: 86px;
+      padding: 13px 5px;
+    }
+
+    & svg {
+      vertical-align: middle;
+      height: 16px;
+    }
+
+    &:nth-child(1) svg {
+      @include mobile {
+        width: 42px;
+        height: 14px;
+      }
+    }
+
+    &:nth-child(2) svg {
+      @include mobile {
+        width: 61px;
+        height: 14px;
+      }
+    }
+
+    &:nth-child(3) svg {
+      @include mobile {
+        width: 63px;
+        height: 14px;
+      }
+    }
+
+    &:nth-child(4) svg {
+      @include mobile {
+        width: 69px;
+        height: 6px;
+      }
+    }
+
+    &:nth-child(5) svg {
+      @include mobile {
+        width: 72px;
+        height: 9px;
+      }
+    }
+
+    &:nth-child(6) svg {
+      @include mobile {
+        width: 64px;
+        height: 11px;
+      }
+    }
+  }
+}
+
+.filter_Sort_CatalogItems__container {
+  display: grid;
+
+  grid-template-columns: minmax(120px, 12.5vw) auto;
+  column-gap: 3.1vw;
+
+  @include mobile {
+    grid-template-columns: auto;
+  }
+}
+
+.filter {
+  @include mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
+.sortForm {
+
+  max-width: 226px;
+  flex-grow: 1;
+
+  .select {
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 0.9;
+
+    width: 100%;
+
+    padding: 7px 0 7px 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    background: url('../src/assets/img/sort-view/arrowSelect.svg') no-repeat right;
+    background-position-x: calc(100% - 15px);
+
+  }
+}
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sort__viewBtn {
+
+  img {
+    display: block;
+    width: 29px;
+
+  }
+
+  img:last-child {
+    margin-left: 7px;
+  }
+
+}
+
+
+
+.catalogItems {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(138px, 15vw));
+  column-gap: 2vw;
+  row-gap: 2.2vw;
+
+  &.lineView {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  @include big-desktop {
+    grid-template-columns: repeat(3, minmax(138px, 25vw));
+  }
+
+  @include small-tablet {
+    grid-template-columns: repeat(2, minmax(138px, 35vw));
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+.pagination {
+  margin: 50px 0;
+}
+
+
+
+
+

@@ -1,0 +1,54 @@
+@import "../../vars";
+@import "../../mixins";
+
+.button {
+
+  &__blue {
+    background-color: $blue-color;
+    padding: 16px 37px;
+    color: $light-color;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    border-radius: 100px;
+
+    transition: background-color .2s linear, color .2s linear;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+
+    &:active {
+      background-color: $active-color;
+      color: $blue-color;
+    }
+  }
+
+  &.hero__btn {
+    padding: 14px 34px;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.hero__btn {
+  margin-left: 130px;
+
+  @include desktop {
+    margin-left: 100px;
+  }
+
+  @include small-tablet {
+    margin-left: 70px;
+  }
+
+  @include mobile {
+    margin-left: 55px;
+  }
+
+  @media (max-width: 389px) {
+    margin: auto auto 10px;
+  }
+}
+

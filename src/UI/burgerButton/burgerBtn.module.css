@@ -1,0 +1,60 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
+
+/* Fonts */
+/*Breakpoints*/
+.burger {
+  display: none;
+  width: 26px;
+  height: 17px;
+  font-size: 0;
+  color: transparent;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+}
+.burger:before, .burger:after,
+.burger span {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #131B22;
+  border-radius: 2px;
+}
+.burger:before, .burger:after {
+  content: "";
+  transition: transform 0.2s linear;
+}
+.burger:before {
+  top: 0;
+}
+.burger span {
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity 0.2s linear;
+}
+.burger:after {
+  bottom: 0;
+}
+.burger.active span {
+  opacity: 0;
+}
+.burger.active:before, .burger.active:after {
+  top: 50%;
+}
+.burger.active:before {
+  transform: rotate(45deg);
+}
+.burger.active:after {
+  transform: rotate(-45deg);
+}
+
+/*# sourceMappingURL=burgerBtn.module.css.map */

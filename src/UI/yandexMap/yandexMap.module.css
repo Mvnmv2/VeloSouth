@@ -1,0 +1,35 @@
+/* Fonts */
+/*Breakpoints*/
+:root {
+  font-family: "Roboto", sans-serif;
+  --content-width: 1920px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
+
+.map {
+  width: 100%;
+  height: 716px;
+}
+@media (max-width: 1280px) {
+  .map {
+    height: 556px;
+  }
+}
+@media (max-width: 768px) {
+  .map {
+    height: 360px;
+  }
+}
+@media (max-width: 576px) {
+  .map {
+    height: 234px;
+  }
+}
+@media (max-width: 350px) {
+  .map {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=yandexMap.module.css.map */

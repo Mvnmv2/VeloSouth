@@ -1,0 +1,225 @@
+@import "../../vars";
+@import "../../mixins";
+
+.bicycle {
+  background-image:url("../../assets/img/15.png");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center 170px;
+  background-size: cover;
+
+  @include desktop {
+    background-position-y: 135px;
+  }
+
+  text-align: center;
+  padding-bottom: 150px;
+
+  @include desktop {
+    padding-bottom: 65px;
+  }
+
+  @include small-tablet {
+    padding-bottom: 35px;
+  }
+
+  @media (max-width: 480px) {
+    padding-bottom: 20px;
+  }
+
+
+  &__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: $black-color;
+    max-width: 580px;
+    margin: 0 auto 50px;
+
+    @include desktop {
+      font-size: 18px;
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+
+    @include tablet {
+      font-size: 16px;
+      max-width: 450px;
+    }
+
+    @include small-tablet {
+      font-size: 14px;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+
+
+    @media (max-width: 320px) {
+      padding: 0 25px;
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__img {
+
+    position: relative;
+    max-width: 1223px;
+    margin: 0 auto 0;
+
+    @include desktop {
+      max-width: 922px;
+    }
+
+    @include small-tablet {
+      max-width: 727px;
+    }
+
+    @media (max-width: 480px){
+      max-width: 470px;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 304px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .redSign {
+      width: 32.2px;
+      height: 32.2px;
+
+      @include desktop {
+        width: 25px;
+        height: 25px;
+      }
+
+      @media (max-width: 480px) {
+        width: 16px;
+        height: 16px;
+      }
+
+      &:first-of-type {
+        position: absolute;
+        left: 18%;
+        top: 68%;
+
+        @media (max-width: 320px) {
+          left: 18%;
+          top: 61%;
+        }
+      }
+
+      &:nth-of-type(2) {
+        position: absolute;
+        left: 45%;
+        top: 41%;
+
+        @media (max-width: 320px) {
+          left: 45%;
+          top: 36%;
+        }
+      }
+
+      &:nth-of-type(3) {
+        position: absolute;
+        left: 56%;
+        top: 36%;
+
+        @media (max-width: 320px) {
+          left: 63%;
+          top: 22%;
+        }
+      }
+
+      &:nth-of-type(4) {
+        position: absolute;
+        left: 48%;
+        top: 56%;
+
+
+
+        @media (max-width: 320px) {
+          left: 48%;
+          top: 52%;
+        }
+      }
+
+      &:nth-of-type(5) {
+        position: absolute;
+        left: 66%;
+        top: 5%;
+
+        @media (max-width: 320px) {
+          left: 68%;
+          top: 0;
+        }
+      }
+
+      &:last-of-type {
+        position: absolute;
+        left: 87%;
+        top: 53%;
+
+        @include desktop {
+          left: 93%;
+        }
+
+        @media (max-width: 320px) {
+          left: 93%;
+          top: 53%;
+        }
+      }
+    }
+  }
+
+
+  &__brands {
+    display: flex;
+    justify-content: center;
+    column-gap: 33px;
+    margin-bottom: 33px;
+
+    @include desktop {
+      margin-bottom: 25px;
+    }
+
+    @include tablet {
+      margin-bottom: 22px;
+    }
+
+    @include small-tablet {
+      margin: 0 auto 20px;
+      max-width: 564px;
+      padding: 0 15px;
+    }
+
+    @media (max-width: 480px) {
+      max-width: 428px;
+    }
+
+    @media (max-width: 320px) {
+      padding: 0 15px;
+      margin-bottom: 15px;
+    }
+
+    &__left {
+      img {
+        display: block;
+        max-width: 260px;
+        width: 100%;
+      }
+    }
+
+    &__right {
+      img {
+        display: block;
+        max-width: 360px;
+        width: 100%;
+      }
+    }
+  }
+}
