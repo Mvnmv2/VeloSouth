@@ -70,5 +70,38 @@
       height: $h2;
     }
   }
+}
 
+@mixin colorLabel ($color) {
+  & {
+    position: relative;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      background-color: $color;
+    }
+
+    &:before {
+      width: 18px;
+      height: 18px;
+      box-shadow: 0 0 1px grey;
+
+    }
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+  }
+
+  &:has(input[type="checkbox"]:checked) {
+    &:before {
+      background: $color url("../../assets/img/arrow.png") no-repeat;
+      background-position: 60% 55%;
+    }
+  }
 }

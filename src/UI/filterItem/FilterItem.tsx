@@ -15,7 +15,8 @@ function FilterItem({prop, foCss}) {
         <>
             <div className={show ? classNames(s.title, s.show) : s.title} onClick={() => handleClick()}>
                 <div>{prop?.title}</div>
-                <div><img className={show ? classNames(s.arrowRotate, s.show) : s.arrowRotate} src={arrow} alt="arrow"/></div>
+                <div><img className={show ? classNames(s.arrowRotate, s.show) : s.arrowRotate} src={arrow} alt="arrow"/>
+                </div>
             </div>
 
             <div className={show ? classNames(s.item, s.show, s[foCss]) : classNames(s.item, s[foCss])}>
@@ -25,7 +26,6 @@ function FilterItem({prop, foCss}) {
                     </label>
                 ))}
             </div>
-
             <hr className={s.line}/>
         </>
     )

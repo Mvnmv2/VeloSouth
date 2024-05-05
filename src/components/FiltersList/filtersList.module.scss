@@ -11,6 +11,7 @@
   color: $black-color;
   //line-height: 15px;
 
+
   transition: margin-bottom .2s linear;
 
   &.show {
@@ -22,6 +23,16 @@
   align-items: center;
 
   cursor: pointer;
+
+  img {
+    min-width: 13px;
+    @media (max-width: 1200px) {
+
+      min-width: 10px;
+      max-width: 10px;
+    }
+
+  }
 }
 
 
@@ -57,6 +68,63 @@
 
   &.block3 {
     @include blocksFilter(auto, auto, hidden, 60px, 60px)
+  }
+
+  &.block4 {
+    @include blocksFilter(repeat(3, auto), repeat(2, auto), hidden, 190px, 300px)
+  }
+
+  &.block5 {
+    @include blocksFilter(repeat(3, auto), repeat(2, auto), hidden, 215px, 325px)
+  }
+
+  &.block6 {
+    @include blocksFilter(auto, auto, hidden, 150px, 235px);
+    row-gap: 8px;
+  }
+
+  &.block7 {
+    @include blocksFilter(auto, auto, hidden, 150px, 235px);
+    row-gap: 8px;
+  }
+
+  &.block8 {
+    @include blocksFilter(repeat(8, auto), repeat(6, auto), hidden, 70px, 94px);
+    row-gap: 8px;
+
+    position: relative;
+
+    label:nth-child(1) { @include colorLabel(#f5f5dc); }
+    label:nth-child(2) { @include colorLabel(#ffffff); }
+    label:nth-child(3) { @include colorLabel(#40e0d0); }
+    label:nth-child(4) { @include colorLabel(#8b0000); }
+    label:nth-child(5) { @include colorLabel(#6698ff); }
+    label:nth-child(6) { @include colorLabel(#ffff00); }
+    label:nth-child(7) { @include colorLabel(#008000); }
+    label:nth-child(8) { @include colorLabel(#ffd700); }
+    label:nth-child(9) { @include colorLabel(#a52a2a); }
+    label:nth-child(10) { @include colorLabel(#ff0000); }
+    label:nth-child(11) { @include colorLabel(#b87333); }
+    label:nth-child(12) { @include colorLabel(#808000); }
+    label:nth-child(13) { @include colorLabel(#ffa500); }
+    label:nth-child(14) { @include colorLabel(#000000); }
+    label:nth-child(15) { @include colorLabel(#ff00ff); }
+    label:nth-child(16) { @include colorLabel(#ff8c00); }
+    label:nth-child(17) { @include colorLabel(#adff2f); }
+    label:nth-child(18) { @include colorLabel(#c0c0c0); }
+    label:nth-child(19) { @include colorLabel(#c0c0c0); }
+    label:nth-child(20) { @include colorLabel(#0000ff); }
+    label:nth-child(21) { @include colorLabel(#6a5acd); }
+    label:nth-child(22) { @include colorLabel(#ee82ee); }
+    label:nth-child(23) { @include colorLabel(#bdb76b); }
+    label:nth-child(24) { @include colorLabel(#000000); }
+
+
+
+
+
+
+
   }
 
   span {

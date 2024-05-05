@@ -149,6 +149,11 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .filter {
+    min-width: 130px;
+  }
+}
 @media (max-width: 576px) {
   .filter {
     display: none;

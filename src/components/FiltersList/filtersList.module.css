@@ -20,6 +20,15 @@
 .title.show {
   margin-bottom: 15px;
 }
+.title img {
+  min-width: 13px;
+}
+@media (max-width: 1200px) {
+  .title img {
+    min-width: 10px;
+    max-width: 10px;
+  }
+}
 
 .item {
   display: grid;
@@ -124,6 +133,696 @@
     font-size: 14px;
     height: 60px;
   }
+}
+.item.block4 {
+  grid-template-columns: repeat(3, auto);
+  padding-right: 3px;
+  font-size: 14px;
+}
+@media (max-width: 1200px) {
+  .item.block4 {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+.item.block4.show {
+  height: 190px;
+  max-height: 100vh;
+  transition: height 0.2s linear;
+  overflow-y: hidden;
+}
+@media (max-width: 1200px) {
+  .item.block4.show {
+    font-size: 14px;
+    height: 300px;
+  }
+}
+.item.block5 {
+  grid-template-columns: repeat(3, auto);
+  padding-right: 3px;
+  font-size: 14px;
+}
+@media (max-width: 1200px) {
+  .item.block5 {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+.item.block5.show {
+  height: 215px;
+  max-height: 100vh;
+  transition: height 0.2s linear;
+  overflow-y: hidden;
+}
+@media (max-width: 1200px) {
+  .item.block5.show {
+    font-size: 14px;
+    height: 325px;
+  }
+}
+.item.block6 {
+  grid-template-columns: auto;
+  padding-right: 3px;
+  font-size: 14px;
+  row-gap: 8px;
+}
+@media (max-width: 1200px) {
+  .item.block6 {
+    grid-template-columns: auto;
+  }
+}
+.item.block6.show {
+  height: 150px;
+  max-height: 100vh;
+  transition: height 0.2s linear;
+  overflow-y: hidden;
+}
+@media (max-width: 1200px) {
+  .item.block6.show {
+    font-size: 14px;
+    height: 235px;
+  }
+}
+.item.block7 {
+  grid-template-columns: auto;
+  padding-right: 3px;
+  font-size: 14px;
+  row-gap: 8px;
+}
+@media (max-width: 1200px) {
+  .item.block7 {
+    grid-template-columns: auto;
+  }
+}
+.item.block7.show {
+  height: 150px;
+  max-height: 100vh;
+  transition: height 0.2s linear;
+  overflow-y: hidden;
+}
+@media (max-width: 1200px) {
+  .item.block7.show {
+    font-size: 14px;
+    height: 235px;
+  }
+}
+.item.block8 {
+  grid-template-columns: repeat(8, auto);
+  padding-right: 3px;
+  font-size: 14px;
+  row-gap: 8px;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .item.block8 {
+    grid-template-columns: repeat(6, auto);
+  }
+}
+.item.block8.show {
+  height: 70px;
+  max-height: 100vh;
+  transition: height 0.2s linear;
+  overflow-y: hidden;
+}
+@media (max-width: 1200px) {
+  .item.block8.show {
+    font-size: 14px;
+    height: 94px;
+  }
+}
+.item.block8 label:nth-child(1) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(1):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #f5f5dc;
+}
+.item.block8 label:nth-child(1):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(1) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(1):has(input[type=checkbox]:checked):before {
+  background: #f5f5dc url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(2) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(2):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.item.block8 label:nth-child(2):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(2) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(2):has(input[type=checkbox]:checked):before {
+  background: #ffffff url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(3) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(3):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #40e0d0;
+}
+.item.block8 label:nth-child(3):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(3) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(3):has(input[type=checkbox]:checked):before {
+  background: #40e0d0 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(4) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(4):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #8b0000;
+}
+.item.block8 label:nth-child(4):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(4) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(4):has(input[type=checkbox]:checked):before {
+  background: #8b0000 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(5) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(5):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #6698ff;
+}
+.item.block8 label:nth-child(5):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(5) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(5):has(input[type=checkbox]:checked):before {
+  background: #6698ff url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(6) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(6):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffff00;
+}
+.item.block8 label:nth-child(6):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(6) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(6):has(input[type=checkbox]:checked):before {
+  background: #ffff00 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(7) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(7):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #008000;
+}
+.item.block8 label:nth-child(7):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(7) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(7):has(input[type=checkbox]:checked):before {
+  background: #008000 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(8) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(8):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffd700;
+}
+.item.block8 label:nth-child(8):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(8) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(8):has(input[type=checkbox]:checked):before {
+  background: #ffd700 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(9) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(9):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #a52a2a;
+}
+.item.block8 label:nth-child(9):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(9) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(9):has(input[type=checkbox]:checked):before {
+  background: #a52a2a url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(10) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(10):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ff0000;
+}
+.item.block8 label:nth-child(10):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(10) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(10):has(input[type=checkbox]:checked):before {
+  background: #ff0000 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(11) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(11):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #b87333;
+}
+.item.block8 label:nth-child(11):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(11) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(11):has(input[type=checkbox]:checked):before {
+  background: #b87333 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(12) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(12):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #808000;
+}
+.item.block8 label:nth-child(12):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(12) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(12):has(input[type=checkbox]:checked):before {
+  background: #808000 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(13) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(13):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffa500;
+}
+.item.block8 label:nth-child(13):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(13) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(13):has(input[type=checkbox]:checked):before {
+  background: #ffa500 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(14) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(14):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.item.block8 label:nth-child(14):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(14) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(14):has(input[type=checkbox]:checked):before {
+  background: #000000 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(15) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(15):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ff00ff;
+}
+.item.block8 label:nth-child(15):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(15) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(15):has(input[type=checkbox]:checked):before {
+  background: #ff00ff url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(16) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(16):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ff8c00;
+}
+.item.block8 label:nth-child(16):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(16) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(16):has(input[type=checkbox]:checked):before {
+  background: #ff8c00 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(17) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(17):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #adff2f;
+}
+.item.block8 label:nth-child(17):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(17) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(17):has(input[type=checkbox]:checked):before {
+  background: #adff2f url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(18) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(18):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #c0c0c0;
+}
+.item.block8 label:nth-child(18):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(18) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(18):has(input[type=checkbox]:checked):before {
+  background: #c0c0c0 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(19) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(19):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #c0c0c0;
+}
+.item.block8 label:nth-child(19):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(19) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(19):has(input[type=checkbox]:checked):before {
+  background: #c0c0c0 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(20) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(20):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #0000ff;
+}
+.item.block8 label:nth-child(20):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(20) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(20):has(input[type=checkbox]:checked):before {
+  background: #0000ff url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(21) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(21):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #6a5acd;
+}
+.item.block8 label:nth-child(21):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(21) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(21):has(input[type=checkbox]:checked):before {
+  background: #6a5acd url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(22) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(22):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ee82ee;
+}
+.item.block8 label:nth-child(22):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(22) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(22):has(input[type=checkbox]:checked):before {
+  background: #ee82ee url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(23) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(23):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #bdb76b;
+}
+.item.block8 label:nth-child(23):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(23) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(23):has(input[type=checkbox]:checked):before {
+  background: #bdb76b url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
+}
+.item.block8 label:nth-child(24) {
+  position: relative;
+  cursor: pointer;
+}
+.item.block8 label:nth-child(24):before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.item.block8 label:nth-child(24):before {
+  width: 18px;
+  height: 18px;
+  box-shadow: 0 0 1px grey;
+}
+.item.block8 label:nth-child(24) input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.item.block8 label:nth-child(24):has(input[type=checkbox]:checked):before {
+  background: #000000 url("../../assets/img/arrow.png") no-repeat;
+  background-position: 60% 55%;
 }
 .item span {
   margin-left: 8px;

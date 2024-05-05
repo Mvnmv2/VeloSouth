@@ -122,7 +122,8 @@ const CatalogPage = () => {
 
                     <section className={classNames(s.catalogItems, !sortViewToggle && s.lineView)}>
                         {
-                            cardItems.map((card) => <Card key={card.id} catalogPage {...card} sortViewToggle={sortViewToggle}/>)
+                            cardItems.map((card) => <Card key={card.id} catalogPage {...card}
+                                                          sortViewToggle={sortViewToggle}/>)
                         }
                     </section>
 
